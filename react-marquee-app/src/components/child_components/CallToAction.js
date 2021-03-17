@@ -2,7 +2,7 @@ import React from 'react';
 
 const CallToAction = () => {
     return (
-        <div class='cta'>
+        <div className='cta'>
             This is CTA.
         </div>
     );

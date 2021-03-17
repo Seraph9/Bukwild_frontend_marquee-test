@@ -5,7 +5,7 @@ import Page from './Page';
 
 const Marquee = () => {
     return (
-        <div class='marquee' style={{
+        <div className='marquee' style={{
             minHeight: '100vh',
             backgroundImage: `url('images/backgrounds/slide_one.jpg')`
         }}>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Subhead = () => {
     return (
-        <div class='subhead'>
+        <div className='subhead'>
             This is Subhead
         </div>
     );

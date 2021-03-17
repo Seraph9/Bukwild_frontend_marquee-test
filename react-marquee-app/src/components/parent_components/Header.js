@@ -6,7 +6,7 @@ import Button from '../child_components/Button';
 
 const Header = () => {
     return (
-        <div class='layout-ui'>
+        <div className='layout-ui'>
             <Logo />
             <Menu />
             <Button />

@@ -5,9 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* everything excluding one component with this class */
 *:not(.marquee) {
   max-width: 1440px;
 }
+
+/* .marquee {
+  
+} */
 
 /* body:not(.marquee) {
   max-width: 1440px;
@@ -15,6 +20,8 @@
 
 /* layout-ui or header - container for all sub-components: logo, menu, button */
 .layout-ui {
+  margin-left: 80px;
+  margin-right: 80px;
   border: 2px solid lawngreen;
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +34,7 @@
   margin-top: 10px;
   margin-left: 25px;
   border: 2px solid #FF5885;
-  flex-basis: 70vw;
+  flex-basis: 50vw;
   height: 40px;
   order: 1
 }
@@ -80,9 +87,11 @@ a:hover {
 /* contact button styes */
 .button_contact_container {
   background: none;
+  /* background-color: red; */
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 115px;
   display: flex;
+  justify-self: flex-end;
   justify-content: flex-end;
   order: 2;
   flex-basis: 25vw;
@@ -96,11 +105,30 @@ button {
   color: white
 }
 
+/* --- */
 /* -- end of layout-ui or header styles -- */
+/* --- */
 
-/* page-ui or Marquee Component */
+/* page-ui container styles */
 .page-ui {
   margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
   border: 2px solid lawngreen;
+  min-height: 100vh;
+}
+
+/* -- page-ui child-components with associated elements' styles: -- */
+.headline {
+  border: 2px solid #FF5885;
+  background-color: white
+}
+
+.subhead {
+  border: 2px solid #FF5885;
+}
+
+.cta {
+  border: 2px solid #FF5885;
 }
 
