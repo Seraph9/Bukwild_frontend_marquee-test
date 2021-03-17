@@ -4,13 +4,13 @@ import Headline from '../child_components/Headline';
 import Subhead from '../child_components/Subhead';
 import CallToAction from '../child_components/CallToAction';
 
-const Page = () => {
+const Page = props => {
 
     return (
         <div className='page-ui'>
-            <Headline />
-            <Subhead />
-            <CallToAction />
+            <Headline selectedObj={props.selected} />
+            <Subhead selectedObj={props.selected} />
+            <CallToAction selectedObj={props.selected} />
         </div>
     );
 };

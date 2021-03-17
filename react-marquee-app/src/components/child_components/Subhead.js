@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Subhead = () => {
+const Subhead = props => {
+    const subhead = props.selectedObj ? props.selectedObj.blocks[0].subhead : "subhead loading";
     return (
         <div className='subhead'>
-            This is Subhead
+            {subhead}
         </div>
     );
 };

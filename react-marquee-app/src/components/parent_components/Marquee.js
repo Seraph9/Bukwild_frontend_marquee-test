@@ -28,7 +28,7 @@ const Marquee = props => {
             backgroundImage: selectData ? `url('images/backgrounds/${selectData.blocks[0].background}')` : `url('images/backgrounds/slide_one.jpg')`
         }}>
             <Header parentCB={selectedCallback} checkSelected={props.checkSelected} />
-            <Page />
+            <Page selected={selectData} />
         </div>
 
     );
