@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Logo from '../child_components/Logo';
+import Menu from '../child_components/Menu';
+
 const Header = () => {
     return (
         <div class='layout-ui'>
-            <div class='logo'>
-                <img src='images/abc.svg' class='abc' />
-            </div>
+            <Logo />
+            <Menu />
         </div>
     );
 };
