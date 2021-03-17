@@ -1,38 +1,36 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 
 import Header from './Header';
 import Page from './Page';
-import DataContext from '../../DataContext';
 
 const Marquee = props => {
-    const [parentData, setParentData] = useState();
-    const dataArray = useContext(DataContext);
-    console.log("marquee: ", dataArray);
-    // const background = dataObject ? dataObject.pages.map(page => page.blocks.map(block => block.background)) : "loading";
-    // console.log(background);
-    function parentCallback(childData) {
-        // [...we will use the dataFromChild here...]
-        console.log("childData: ", childData);
+    const [selectData, setSelectData] = useState();
 
-        let selectedArray = childData ? [...childData] : ['slide_two.jpg'];
-        console.log("selectedArray: ", selectedArray);
-        // setParentData(selectedArray);
-        setParentData(selectedArray.pop());
-        console.log('parentdata: ', parentData)
+    function selectedCallback(childData) {
+
+        //console.log("childData: ", childData);
+
+        // let selectedArray = childData ? [...childData] : ['slide_two.jpg']; // this way works too
+        let selectedArray = childData ? childData : ['slide_two.jpg'];
+        //console.log("selectedArray: ", selectedArray);
+
+        setSelectData(selectedArray.pop());
 
     }
-    // NOTE BENE: the backgroundImage url is correct now
+    console.log('selectdata: ', selectData)
+    // NOTE BENE: the backgroundImage url syntax is correct now
+    // && parentData.blocks.length > 0 (as an additional check in backgroundImage below if using the first selectedArray variable commented out line in function parentCallback)
     return (
-        /* <DataContext.Consumer> */
+
 
         <div className='marquee' style={{
             minHeight: '100vh',
-            backgroundImage: parentData && parentData.blocks.length > 0 ? `url('images/backgrounds/${parentData.blocks[0].background}')` : `url('images/backgrounds/slide_one.jpg')`
+            backgroundImage: selectData ? `url('images/backgrounds/${selectData.blocks[0].background}')` : `url('images/backgrounds/slide_one.jpg')`
         }}>
-            <Header parentCB={parentCallback} checkSelected={props.checkSelected} />
+            <Header parentCB={selectedCallback} checkSelected={props.checkSelected} />
             <Page />
         </div>
-        /* </DataContext.Consumer> */
+
     );
 };
 

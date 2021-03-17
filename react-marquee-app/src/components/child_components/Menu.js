@@ -1,20 +1,19 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
-import DataContext from '../../DataContext';
 
 const Menu = props => {
-    const dataArray = useContext(DataContext);
+
 
     function handleClick(event) {
         event.preventDefault();
-        console.log("innerText: ", event.target.innerText);
+        //console.log("innerText: ", event.target.innerText);
         const selectedContent = props.checkSelected.filter(ele => {
             if (ele.title === event.target.innerText) {
                 return ele;
             }
-        })
-        console.log("selectedContent: ", selectedContent);
-        props.parentCall(selectedContent);
+        });
+        // console.log("selectedContent: ", selectedContent);
+        props.parentCB(selectedContent);
     }
 
     return (

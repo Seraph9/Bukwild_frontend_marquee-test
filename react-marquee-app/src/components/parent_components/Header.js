@@ -9,7 +9,7 @@ const Header = props => {
     return (
         <div className='layout-ui'>
             <Logo />
-            <Menu parentCall={props.parentCB} checkSelected={props.checkSelected} />
+            <Menu parentCB={props.parentCB} checkSelected={props.checkSelected} />
             <Button />
         </div>
     );

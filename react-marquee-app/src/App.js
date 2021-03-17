@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
-//import { BrowserRouter, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 // local imports
-// import Header from './components/parent_components/Header';
 import DataContext from './DataContext';
 import Marquee from './components/parent_components/Marquee';
 
@@ -18,12 +16,12 @@ function App() {
     })
       .then(response => response.json())
       .then(function (data) {
-        console.log("data: ", data);
+        //console.log("data: ", data);
         let checkData = data ? data.pages : 'no data';
         setCheck(checkData);
         let relevantData = data ? data.pages.map(page => page.blocks) : 'no data';
         relevantData = relevantData.reduce((acc, ele) => acc.concat(ele));
-        console.log("relevant: ", relevantData);
+        //console.log("relevant: ", relevantData);
         setContents(relevantData);
       })
       .catch(error => console.error(error));
@@ -41,12 +39,6 @@ function App() {
       <DataContext.Provider value={contents}>
         <Marquee checkSelected={check} />
       </DataContext.Provider>
-      {/* <BrowserRouter>
-        <Route exact path='/Industries' component={Marquee}></Route>
-        <Route exact path='/Services' component={ }></Route>
-        <Route exact path='/About Us' component={ }></Route>
-      </BrowserRouter> */}
-
     </div>
   );
 }
