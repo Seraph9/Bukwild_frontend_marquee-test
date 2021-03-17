@@ -14,7 +14,7 @@ const Marquee = props => {
         // [...we will use the dataFromChild here...]
         console.log("childData: ", childData);
 
-        let selectedArray = childData.blocks !== undefined ? childData.blocks : ['slide_two.jpg'];
+        let selectedArray = childData ? [...childData] : ['slide_two.jpg'];
         console.log("selectedArray: ", selectedArray);
         // setParentData(selectedArray);
         setParentData(selectedArray.pop());
@@ -24,9 +24,10 @@ const Marquee = props => {
     // NOTE BENE: the backgroundImage url is correct now
     return (
         /* <DataContext.Consumer> */
+
         <div className='marquee' style={{
             minHeight: '100vh',
-            backgroundImage: parentData && parentData.length > 0 ? `url('images/backgrounds/${parentData}')` : `url('images/backgrounds/slide_one.jpg')`
+            backgroundImage: parentData && parentData.blocks.length > 0 ? `url('images/backgrounds/${parentData.blocks[0].background}')` : `url('images/backgrounds/slide_one.jpg')`
         }}>
             <Header parentCB={parentCallback} checkSelected={props.checkSelected} />
             <Page />
