@@ -121,14 +121,17 @@ button {
 /* -- page-ui child-components with associated elements' styles: -- */
 .headline {
   border: 2px solid #FF5885;
-  background-color: white
+  color: white
 }
 
 .subhead {
   border: 2px solid #FF5885;
+  color: white;
 }
 
 .cta {
   border: 2px solid #FF5885;
+  background-color: white;
+  color: black
 }
 
