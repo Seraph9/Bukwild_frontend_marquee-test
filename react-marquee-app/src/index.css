@@ -1,11 +1,106 @@
 /* TODO Add site wide styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+*:not(.marquee) {
+  max-width: 1440px;
+}
 
+/* body:not(.marquee) {
+  max-width: 1440px;
+} */
+
+/* layout-ui or header - container for all sub-components: logo, menu, button */
+.layout-ui {
+  border: 2px solid lawngreen;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+/* -- all layout-ui or header child-components with associated elements' styles: -- */
 /* logo styles */
+.logo {
+  margin-top: 10px;
+  margin-left: 25px;
+  border: 2px solid #FF5885;
+  flex-basis: 70vw;
+  height: 40px;
+  order: 1
+}
+
+
 .abc {
   width: 75.7px;
   height: 37.8px;
-  margin: 0 704.7px 255.3px 2.7px;
+  margin-left: 15px;
+  /* margin: 0 704.7px 255.3px 2.7px; */
   object-fit: contain;
-  background-color: lightslategray; /* #ffffff */
+  background: none
 }
+
+/* menu styles */
+.menu {
+  margin-top: 5px;
+  border: 2px solid #FF5885;
+  margin-left: 25px;
+  flex-basis: 9vw;
+  order: 3
+}
+
+ul {
+  /* background-color: yellow; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center */
+}
+
+li {
+  display: flex;
+  justify-content: flex-start
+
+}
+
+a {
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  color: white;
+}
+
+a:hover {
+  color: orange;
+}
+
+/* contact button styes */
+.button_contact_container {
+  background: none;
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: flex-end;
+  order: 2;
+  flex-basis: 25vw;
+}
+
+button {
+  padding: 12px 35px 12px 35px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid white;
+  color: white
+}
+
+/* -- end of layout-ui or header styles -- */
+
+/* page-ui or Marquee Component */
+.page-ui {
+  margin-top: 50px;
+  border: 2px solid lawngreen;
+}
+

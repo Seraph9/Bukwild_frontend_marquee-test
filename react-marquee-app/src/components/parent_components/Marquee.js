@@ -1,15 +1,16 @@
 import React from 'react';
 
-import Headline from '../child_components/Headline';
-import Subhead from '../child_components/Subhead';
-import CallToAction from '../child_components/CallToAction';
+import Header from './Header';
+import Page from './Page';
 
 const Marquee = () => {
     return (
-        <div class='page-ui'>
-            <Headline />
-            <Subhead />
-            <CallToAction />
+        <div class='marquee' style={{
+            minHeight: '100vh',
+            backgroundImage: `url('images/backgrounds/slide_one.jpg')`
+        }}>
+            <Header />
+            <Page />
         </div>
     );
 };
