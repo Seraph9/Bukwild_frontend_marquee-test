@@ -7,7 +7,7 @@ import DataContext from './DataContext';
 import Marquee from './components/parent_components/Marquee';
 
 function App() {
-
+  const [check, setCheck] = useState();
   const [contents, setContents] = useState();
   const getData = () => {
     const data = fetch('data.json', {
@@ -18,8 +18,13 @@ function App() {
     })
       .then(response => response.json())
       .then(function (data) {
-        // console.log(data);
-        setContents(data);
+        console.log("data: ", data);
+        let checkData = data ? data.pages : 'no data';
+        setCheck(checkData);
+        let relevantData = data ? data.pages.map(page => page.blocks) : 'no data';
+        relevantData = relevantData.reduce((acc, ele) => acc.concat(ele));
+        console.log("relevant: ", relevantData);
+        setContents(relevantData);
       })
       .catch(error => console.error(error));
     return data;
@@ -28,12 +33,13 @@ function App() {
 
   useEffect(() => {
     getData();
+
   }, [])
 
   return (
     <div>
       <DataContext.Provider value={contents}>
-        <Marquee />
+        <Marquee checkSelected={check} />
       </DataContext.Provider>
       {/* <BrowserRouter>
         <Route exact path='/Industries' component={Marquee}></Route>

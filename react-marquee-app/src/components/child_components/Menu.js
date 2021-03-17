@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-const Menu = () => {
+import DataContext from '../../DataContext';
+
+const Menu = props => {
+    const dataArray = useContext(DataContext);
+
+    function handleClick(event) {
+        event.preventDefault();
+        console.log("innerText: ", event.target.innerText);
+        const selectedContent = props.checkSelected.filter(ele => {
+            if (ele.title === event.target.innerText) {
+                return ele;
+            }
+        })
+        console.log("selectedContent: ", selectedContent);
+        props.parentCall(selectedContent);
+    }
+
     return (
         <div className='menu'>
             <ul>
                 <li>
-                    <a href='/'>Industries</a>
+                    <a href='/' onClick={handleClick}>Industries</a>
                 </li>
                 <li>
-                    <a href='/'>Services</a>
+                    <a href='/' onClick={handleClick}>Services</a>
                 </li>
                 <li>
-                    <a href='/'>About Us</a>
+                    <a href='/' onClick={handleClick}>About Us</a>
                 </li>
             </ul>
         </div>

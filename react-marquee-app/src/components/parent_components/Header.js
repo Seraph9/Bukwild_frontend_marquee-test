@@ -4,11 +4,12 @@ import Logo from '../child_components/Logo';
 import Menu from '../child_components/Menu';
 import Button from '../child_components/Button';
 
-const Header = () => {
+const Header = props => {
+
     return (
         <div className='layout-ui'>
             <Logo />
-            <Menu />
+            <Menu parentCall={props.parentCB} checkSelected={props.checkSelected} />
             <Button />
         </div>
     );
