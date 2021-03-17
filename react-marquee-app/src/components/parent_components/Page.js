@@ -5,31 +5,32 @@ import Subhead from '../child_components/Subhead';
 import CallToAction from '../child_components/CallToAction';
 
 const Page = () => {
-    const [contents, setContents] = useState();
-    const getData = () => {
-        const data = fetch('data.json', {
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-            .then(response => response.json())
-            .then(function (data) {
-                console.log(data);
-                setContents(data);
-            })
-            .catch(error => console.error(error));
-        return data;
+    // const [contents, setContents] = useState();
+    // const getData = () => {
+    //     const data = fetch('data.json', {
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             'Accept': 'application/json'
+    //         }
+    //     })
+    //         .then(response => response.json())
+    //         .then(function (data) {
+    //             console.log(data);
+    //             setContents(data);
+    //         })
+    //         .catch(error => console.error(error));
+    //     return data;
 
-    };
+    // };
 
-    useEffect(() => {
-        getData();
-    }, [])
+    // useEffect(() => {
+    //     getData();
+    // }, [])
 
     return (
         <div className='page-ui'>
-            {contents !== null ? <Headline data={contents} /> : "Heeadline still loading!"}
+            {/* {contents !== null ? <Headline data={contents} /> : "Heeadline still loading!"} */}
+            <Headline />
             <Subhead />
             <CallToAction />
         </div>
