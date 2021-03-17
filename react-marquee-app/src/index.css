@@ -1,1 +1,11 @@
 /* TODO Add site wide styles */
+
+
+/* logo styles */
+.abc {
+  width: 75.7px;
+  height: 37.8px;
+  margin: 0 704.7px 255.3px 2.7px;
+  object-fit: contain;
+  background-color: lightslategray; /* #ffffff */
+}
