@@ -1,3 +1,5 @@
+Project Test published with GitHub Pages @: https://seraph9.github.io/Bukwild_frontend_marquee-test/
+
 # Bukwild_frontend_marquee-test
 Frontend coding test to engineer a Marquee Component using React.js for Bukwild Studio Sacramento
 Component Dev Test (2021)
