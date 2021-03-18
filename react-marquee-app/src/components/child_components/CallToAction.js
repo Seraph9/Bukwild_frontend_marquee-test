@@ -5,6 +5,7 @@ const CallToAction = props => {
     return (
         <div className='cta'>
             {cta}
+            <a href='/'>LET'S TALK.<img src='images/arrow2.jpeg' className='arrow' alt='yellow right-pointing arrow' /></a>
         </div>
     );
 };

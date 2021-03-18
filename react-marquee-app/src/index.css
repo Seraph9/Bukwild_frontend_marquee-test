@@ -20,13 +20,13 @@
 
 /* layout-ui or header - container for all sub-components: logo, menu, button */
 .layout-ui {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
   border: 2px solid lawngreen;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-
+  padding-bottom: 45px;
 }
 
 /* -- all layout-ui or header child-components with associated elements' styles: -- */
@@ -56,7 +56,8 @@
   border: 2px solid #FF5885;
   margin-left: 25px;
   flex-basis: 9vw;
-  order: 3
+  order: 3;
+  padding-bottom: 5px;
 }
 
 ul {
@@ -73,15 +74,16 @@ li {
 
 }
 
-a {
+li a {
   text-decoration: none;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 15px;
   color: white;
+  font-size: 0.875rem;
 }
 
-a:hover {
+li a:hover {
   color: orange;
 }
 
@@ -112,27 +114,86 @@ button {
 
 /* page-ui container styles */
 .page-ui {
-  margin-top: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-top: 65px;
+  margin-left: 60px;
+  margin-right: 60px;
   border: 2px solid lawngreen;
   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* -- page-ui child-components with associated elements' styles: -- */
 .headline {
   border: 2px solid #FF5885;
-  color: white
+  color: white;
+  flex-basis: 50%;
+  margin-top: 25px;
+  margin-left: 15px;
+  font-family: HelveticaNeue;
+  font-size: 5.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -2.2px;
+  display: flex;
 }
 
 .subhead {
   border: 2px solid #FF5885;
+  padding: 25px;
   color: white;
+  flex-basis: 30%;
+  margin-top: 35px;
+  margin-right: 60px;
+  font-family: HelveticaNeue;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  display: flex;
 }
 
 .cta {
   border: 2px solid #FF5885;
   background-color: white;
-  color: black
+  color: black;
+  flex-basis: 73.75rem;
+  margin-top: 135px;
+  margin-left: 25px;
+  margin-right: 15px;
+  padding: 4.625rem 8.5rem 4.563rem 4.813rem;
+  display: flex;
+  justify-content: space-between;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  width: 16.454rem;
+  height: 1.25rem;
+  margin: 0.063rem 0;
+  font-family: HelveticaNeue;
+  font-size: 0.688rem;
+  /* font-weight: 500; */
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: 1px;
+}
+
+.arrow {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0 9.829rem 0 5.25rem;
+  padding: 0.313rem 0.125rem;
+  border: 1px solid black
+}
+
 

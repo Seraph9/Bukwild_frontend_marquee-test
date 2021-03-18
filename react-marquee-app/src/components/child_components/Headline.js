@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Headline = props => {
-    const headline = props.selectedObj ? props.selectedObj.blocks[0].headline : "headline still loading!";
+    const headline = props.selectedObj ? props.selectedObj.blocks[0].headline : "Headline still loading!";
     return (
         <div className='headline'>
             {headline}
