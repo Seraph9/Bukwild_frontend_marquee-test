@@ -25,7 +25,8 @@
   border: 2px solid lawngreen;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-between;
+  /* align-content: space-between; */
   padding-bottom: 45px;
 }
 
@@ -35,7 +36,8 @@
   margin-top: 10px;
   margin-left: 25px;
   border: 2px solid #FF5885;
-  flex-basis: 50vw;
+  /* flex-basis: 50vw; */
+  /* flex-basis: 10vw; */
   height: 40px;
   order: 1
 }
@@ -45,7 +47,6 @@
   width: 75.7px;
   height: 37.8px;
   margin-left: 15px;
-  /* margin: 0 704.7px 255.3px 2.7px; */
   object-fit: contain;
   background: none
 }
@@ -55,7 +56,8 @@
   margin-top: 5px;
   border: 2px solid #FF5885;
   margin-left: 25px;
-  flex-basis: 9vw;
+  /* flex-basis: 9vw; */
+  flex-basis: 100vw;
   order: 3;
   padding-bottom: 5px;
 }
@@ -81,6 +83,7 @@ li a {
   margin-left: 15px;
   color: white;
   font-size: 0.875rem;
+  font-weight: bold;
 }
 
 li a:hover {
@@ -90,14 +93,14 @@ li a:hover {
 /* contact button styes */
 .button_contact_container {
   background: none;
-  /* background-color: red; */
   margin-top: 20px;
-  margin-left: 115px;
+  margin-right: 15px;
   display: flex;
   justify-self: flex-end;
   justify-content: flex-end;
   order: 2;
-  flex-basis: 25vw;
+  /* flex-basis: 25vw; */
+  /* flex-basis: 75vw; */
 }
 
 button {
@@ -131,6 +134,7 @@ button {
   flex-basis: 50%;
   margin-top: 25px;
   margin-left: 15px;
+  padding-left: 15px;
   font-family: HelveticaNeue;
   font-size: 5.25rem;
   font-weight: bold;
@@ -162,6 +166,9 @@ button {
   border: 2px solid #FF5885;
   background-color: white;
   color: black;
+  font-family: HelveticaNeue;
+  font-size: 1.5rem;
+  font-weight: bold;
   flex-basis: 73.75rem;
   margin-top: 135px;
   margin-left: 25px;
@@ -169,31 +176,28 @@ button {
   padding: 4.625rem 8.5rem 4.563rem 4.813rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-a {
+.cta-link {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  border: 1px solid black;
-  width: 16.454rem;
+  margin-right: 20%;
   height: 1.25rem;
-  margin: 0.063rem 0;
   font-family: HelveticaNeue;
   font-size: 0.688rem;
-  /* font-weight: 500; */
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
   letter-spacing: 1px;
+  display: flex;
 }
 
 .arrow {
-  width: 1.375rem;
-  height: 1.375rem;
-  margin: 0 9.829rem 0 5.25rem;
-  padding: 0.313rem 0.125rem;
-  border: 1px solid black
+  width: 1.755rem;
+  height: 1.175rem;
+  margin-left: 20px;
 }
 
 
