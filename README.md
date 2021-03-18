@@ -33,3 +33,15 @@ How to submit
 - Send links for both to careers@bukwild.com along with any information or context you think is relevant.
 
 Thank you so much!  Your time is valuable and we appreciate the effort we’re asking of you.
+
+## Screenshots of Completed Frontend Developer Coding Test Assignment:
+![Bukwild Industries](/screenshots/Bukwild1.png)
+![Bukwild Services](/screenshots/Bukwild2.png)
+![Bukwild About Us](/screenshots/Bukwild3.png)
+![Bukwild Scroll Down Bottom Page](/screenshots/Bukwild4.png)
+![Bukwild Laptop](/screenshots/Bukwild-laptop.png)
+![Bukwild Narrow Screen](/screenshots/Bukwild-narrow.png)
+![Bukwild iPad](/screenshots/Bukwild-iPad.png)
+![Bukwild iPhone](/screenshots/Bukwild-iPhone.png)
+![Bukwild Android](/screenshots/Bukwild-android.png)
+

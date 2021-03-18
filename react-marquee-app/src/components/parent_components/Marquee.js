@@ -17,7 +17,7 @@ const Marquee = props => {
         setSelectData(selectedArray.pop());
 
     }
-    console.log('selectdata: ', selectData)
+    // console.log('selectdata: ', selectData)
     // NOTE BENE: the backgroundImage url syntax is correct now
     // && parentData.blocks.length > 0 (as an additional check in backgroundImage below if using the first selectedArray variable commented out line in function parentCallback)
     return (

@@ -10,10 +10,6 @@
   max-width: 1440px;
 }
 
-/* .marquee {
-  
-} */
-
 /* body:not(.marquee) {
   max-width: 1440px;
 } */
@@ -22,7 +18,6 @@
 .layout-ui {
   margin-left: 60px;
   margin-right: 60px;
-  border: 2px solid lawngreen;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,9 +30,6 @@
 .logo {
   margin-top: 10px;
   margin-left: 25px;
-  border: 2px solid #FF5885;
-  /* flex-basis: 50vw; */
-  /* flex-basis: 10vw; */
   height: 40px;
   order: 1
 }
@@ -54,9 +46,7 @@
 /* menu styles */
 .menu {
   margin-top: 5px;
-  border: 2px solid #FF5885;
   margin-left: 25px;
-  /* flex-basis: 9vw; */
   flex-basis: 100vw;
   order: 3;
   padding-bottom: 5px;
@@ -67,7 +57,6 @@ ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  /* justify-content: center */
 }
 
 li {
@@ -99,8 +88,6 @@ li a:hover {
   justify-self: flex-end;
   justify-content: flex-end;
   order: 2;
-  /* flex-basis: 25vw; */
-  /* flex-basis: 75vw; */
 }
 
 button {
@@ -120,7 +107,6 @@ button {
   margin-top: 65px;
   margin-left: 60px;
   margin-right: 60px;
-  border: 2px solid lawngreen;
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +115,6 @@ button {
 
 /* -- page-ui child-components with associated elements' styles: -- */
 .headline {
-  border: 2px solid #FF5885;
   color: white;
   flex-basis: 50%;
   margin-top: 25px;
@@ -146,7 +131,6 @@ button {
 }
 
 .subhead {
-  border: 2px solid #FF5885;
   padding: 25px;
   color: white;
   flex-basis: 30%;
@@ -163,7 +147,6 @@ button {
 }
 
 .cta {
-  border: 2px solid #FF5885;
   background-color: white;
   color: black;
   font-family: HelveticaNeue;
