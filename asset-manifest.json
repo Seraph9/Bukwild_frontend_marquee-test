@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/Bukwild_frontend_marquee-test/static/css/main.6d1a8977.chunk.css",
-    "main.js": "/Bukwild_frontend_marquee-test/static/js/main.0dfcdcbb.chunk.js",
-    "main.js.map": "/Bukwild_frontend_marquee-test/static/js/main.0dfcdcbb.chunk.js.map",
+    "main.js": "/Bukwild_frontend_marquee-test/static/js/main.a6e3dded.chunk.js",
+    "main.js.map": "/Bukwild_frontend_marquee-test/static/js/main.a6e3dded.chunk.js.map",
     "runtime-main.js": "/Bukwild_frontend_marquee-test/static/js/runtime-main.e6b9b328.js",
     "runtime-main.js.map": "/Bukwild_frontend_marquee-test/static/js/runtime-main.e6b9b328.js.map",
-    "static/js/2.0a101517.chunk.js": "/Bukwild_frontend_marquee-test/static/js/2.0a101517.chunk.js",
-    "static/js/2.0a101517.chunk.js.map": "/Bukwild_frontend_marquee-test/static/js/2.0a101517.chunk.js.map",
+    "static/js/2.f4f1f56d.chunk.js": "/Bukwild_frontend_marquee-test/static/js/2.f4f1f56d.chunk.js",
+    "static/js/2.f4f1f56d.chunk.js.map": "/Bukwild_frontend_marquee-test/static/js/2.f4f1f56d.chunk.js.map",
     "index.html": "/Bukwild_frontend_marquee-test/index.html",
     "static/css/main.6d1a8977.chunk.css.map": "/Bukwild_frontend_marquee-test/static/css/main.6d1a8977.chunk.css.map",
-    "static/js/2.0a101517.chunk.js.LICENSE.txt": "/Bukwild_frontend_marquee-test/static/js/2.0a101517.chunk.js.LICENSE.txt"
+    "static/js/2.f4f1f56d.chunk.js.LICENSE.txt": "/Bukwild_frontend_marquee-test/static/js/2.f4f1f56d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e6b9b328.js",
-    "static/js/2.0a101517.chunk.js",
+    "static/js/2.f4f1f56d.chunk.js",
     "static/css/main.6d1a8977.chunk.css",
-    "static/js/main.0dfcdcbb.chunk.js"
+    "static/js/main.a6e3dded.chunk.js"
   ]
 }
