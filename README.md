@@ -1,6 +1,6 @@
 Project Test published with GitHub Pages @: https://seraph9.github.io/Bukwild_frontend_marquee-test/
 
-* This goes in the package.json file if deploying with github pages: `"homepage": "https://seraph9.github.io/Bukwild_frontend_marquee-test",`
+* This goes in the package.json (after "private" and before "dependencies" ideally) file if deploying with github pages: `"homepage": "https://seraph9.github.io/Bukwild_frontend_marquee-test",`
 
 * Installing the library React Transition Groups for adding React animation effects when the state changes and page re-renders: `npm install react-transition-group --save`
 

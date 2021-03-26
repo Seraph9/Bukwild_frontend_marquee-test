@@ -2,6 +2,7 @@
   "name": "react-marquee-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seraph9.github.io/Bukwild_frontend_marquee-test",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
