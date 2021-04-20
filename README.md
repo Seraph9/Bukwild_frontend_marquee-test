@@ -4,6 +4,8 @@ Project Test published with GitHub Pages @: https://seraph9.github.io/Bukwild_fr
 
 * Installing the library React Transition Groups for adding React animation effects when the state changes and page re-renders: `npm install react-transition-group --save`
 
+Before scheduling a Zoom interview, we’d like you to complete this test of your front end dev abilities.  This is very relevant to this position because the majority of your time will be spent taking Zeplin-ified designs and turning them into components that accept data from a CMS.
+
 # Bukwild_frontend_marquee-test
 Frontend coding test to engineer a Marquee Component using React.js for Bukwild Studio Sacramento
 Component Dev Test (2021)
