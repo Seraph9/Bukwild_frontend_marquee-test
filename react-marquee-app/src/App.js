@@ -15,9 +15,10 @@ function App() {
     })
       .then(response => response.json())
       .then(function (data) {
-        //console.log("data: ", data);
-        let checkData = data ? data.pages : 'no data';
-        setCheck(checkData);
+        // console.log("data: ", data);
+        // let checkData = data ? data.pages : 'no data';
+        // setCheck(checkData);
+        setCheck(data.pages);
       })
       .catch(error => console.error(error));
     return data;
@@ -28,12 +29,15 @@ function App() {
     getData();
 
   }, [])
-
-  return (
-    <div>
-      <Marquee checkSelected={check} />
-    </div>
-  );
+  if (check !== undefined) {
+    return (
+      <div>
+        <Marquee checkSelected={check} />
+      </div>
+    )
+  } else {
+    return <div className="initialRender">Loading...</div>
+  }
 }
 
 export default App;

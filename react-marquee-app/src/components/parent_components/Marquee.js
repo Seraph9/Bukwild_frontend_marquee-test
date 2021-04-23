@@ -33,6 +33,8 @@ const Marquee = props => {
     // console.log('selectdata: ', selectData)
     // NOTE BENE: the backgroundImage url syntax is correct now
     // && parentData.blocks.length > 0 (as an additional check in backgroundImage below if using the first selectedArray variable commented out line in function parentCallback)
+    // NOTE: PLAY WITH PLACING FETCH CALL HERE IN MARQUEE INSTEAD OF APP AND THEN DOING THE IF ELSE RENDERING INSIDE TRANSITION
+    // if (props.checkSelected !== undefined) {
     return (
 
         <Transition in={animate} timeout={300}>
@@ -44,11 +46,21 @@ const Marquee = props => {
                     ...transitionStyles[state]
                 }}>
                     <Header parentCB={selectedCallback} checkSelected={props.checkSelected} />
-                    <Page selected={selectData} />
+                    <Page selected={selectData} initialLoad={props.checkSelected} />
                 </div>
             )}
         </Transition>
-    );
+    )
+    // } else {
+    //     return (
+    //         // <Transition in={animate} timeout={300}>
+    //         //     {state => (
+    //         <div className="initialRender" >Loading...</div>
+    //         //     )
+    //         // }
+    //         // </Transition>
+    //     )
+    // }
 };
 
 export default Marquee;

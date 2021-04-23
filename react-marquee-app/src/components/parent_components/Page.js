@@ -8,11 +8,11 @@ const Page = props => {
 
     return (
         <div className='page-ui'>
-            <Headline selectedObj={props.selected} />
-            <Subhead selectedObj={props.selected} />
-            <CallToAction selectedObj={props.selected} />
+            <Headline selectedObj={props.selected} initialLoad={props.initialLoad} />
+            <Subhead selectedObj={props.selected} initialLoad={props.initialLoad} />
+            <CallToAction selectedObj={props.selected} initialLoad={props.initialLoad} />
         </div>
-    );
+    )
 };
 
 export default Page;
